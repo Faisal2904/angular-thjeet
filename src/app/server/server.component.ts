@@ -4,5 +4,13 @@ import {Component} from '@angular/core'
   templateUrl:'./server.component.html'
 })
 export class ServerComponent {
+  serverStat='';
+  constructor(){
+     this.serverStat=Math.random()>0.5?'online':'offline';
+  }
+
+  getColor(){
+    return this.serverStat==='online'?'green':'red';
+  }
 
 }
