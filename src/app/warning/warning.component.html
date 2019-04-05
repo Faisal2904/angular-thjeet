@@ -4,5 +4,5 @@
 <input type="text" [(ngModel)]="serverName" class="form-control">
 <button class="btn btn-primary" (click)="addServer()"> Server</button>
 <p>{{serverStatus}} </p>
-<app-server></app-server> 
-<app-server></app-server> 
+<app-server *ngFor="let x of arr"></app-server> 
+<!-- <app-server></app-server>  -->
