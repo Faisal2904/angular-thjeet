@@ -1,1 +1,10 @@
 <p>SUCCESS!!!!!</p>
+
+<button class="btn btn-primary" (click)="toggleMe($event)">Toggle</button>
+<p [hidden]="status"> Secret password=Tuna</p>
+
+<li  *ngFor="let x of arr" [ngStyle]="{backgroundColor:getColor(x)}"
+[ngClass]="{online: x>=5}"
+
+
+>{{x}}</li>
